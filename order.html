@@ -4,68 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="x-icon" href="images/icon.png">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Order</title>
 </head>
-<body> 
+<body>
+    
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <img src="logo.png" width="200px" fill="none" stroke="currentColor"  stroke-width="2" viewBox="0 0 24 24">
+
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900" href="home.html">Home</a>
+            <a class="mr-5 hover:text-gray-900" href="menu.html">Menu</a>
+            <a class="mr-5 hover:text-gray-900" href="about.html">About</a>
+            <a class="mr-5 hover:text-gray-900" href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </header>    
       
 <form name="submit-to-google-sheet">
-      <section class="text-gray-900 body-font relative">
+      <section class="text-gray-600 body-font relative">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-col text-center w-full mb-12">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Order Details</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">compulsory to submit your details <br> Cash on Delevery</p>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">compulsory to submit your details</p>
           </div>
           <div class="lg:w-1/2 md:w-2/3 mx-auto">
             <div class="flex flex-wrap -m-2">
               <div class="p-2 w-1/2">
                 <div class="relative">
-                  <label for="name" class="leading-7 text-sm text-gray-900">Name</label>
+                  <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
                   <input type="text" id="Name" name="Name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 </div>
               </div>
               <div class="p-2 w-1/2">
                 <div class="relative">
-                  <label for="email" class="leading-7 text-sm text-gray-900">Email</label>
+                  <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
                   <input type="Email" id="Email" name="Email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 </div>
               </div>
               <div class="p-2 w-1/2">
                 <div class="relative">
-                  <label for="Phone" class="leading-7 text-sm text-gray-900">Phone number</label>
+                  <label for="Phone" class="leading-7 text-sm text-gray-600">Phone number</label>
                   <input type="text" id="Phone number" name="Phone number" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 </div>
               </div>
               <div class="p-2 w-1/2">
                 <div class="relative">
-                  <label for="address" class="leading-7 text-sm text-gray-900">Address</label>
+                  <label for="address" class="leading-7 text-sm text-gray-600">Address</label>
                   <input type="Address" id="Address" name="Address" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 </div>
               </div>
               <div class="p-2 w-1/2">
                 <div class="relative">
-                  <label for="Product name" class="leading-7 text-sm text-gray-900">Product name</label>
+                  <label for="Product name" class="leading-7 text-sm text-gray-600">Product name</label>
                   <input type="Product name" id="Product name" name="Product name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 </div>
               </div>
               <div class="p-2 w-1/2">
                 <div class="relative">
-                  <label for="Quantity" class="leading-7 text-sm text-gray-900">Quantity</label>
+                  <label for="Quantity" class="leading-7 text-sm text-gray-600">Quantity</label>
                   <input type="Quantity" id="Quantity" name="Quantity" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 </div>
               </div>
               <div class="p-2 w-full">
                 <div class="relative">
-                  <label for="message" class="leading-7 text-sm text-gray-900">Requirement (Optional)</label>
+                  <label for="message" class="leading-7 text-sm text-gray-600">requirement (Optional)</label>
                   <textarea id="Message" name="Message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-yellow-500 focus:bg-white focus:ring-2 focus:ring-yellow-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                 </div>
               </div>
               <div class="p-2 w-full">
-                <button id='sumbmit' class="flex mx-auto text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+                <button class="flex mx-auto text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button> 
                 <br>
-                
+                <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="submit.html">Ok</a></button>
               </div>
               <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
                 <a class="text-yellow-500" href="raskbind@gmail.com">raskbind@gmail.com</a>
@@ -78,58 +95,12 @@
         </div>
       </section>
       </form>
-      
-      <div class="loading-spinner"></div>
-      
-      <style>
-        .loading-spinner {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 5px solid #ccc;
-  border-top-color: #0073b1;
-  animation: spin 1s ease-in-out infinite;
-}
-
-.loading-spinner:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 5px solid #ccc;
-  border-top-color: #0073b1;
-  animation: spin 1s ease-in-out infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.loading {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-      </style>
 
 
       <footer class="text-gray-600 body-font">
             <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
               <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                <img src="images/logo.png" width="200px" fill="none" stroke="currentColor"  stroke-width="2" viewBox="0 0 24 24">
+                <img src="logo.png" width="200px" fill="none" stroke="currentColor"  stroke-width="2" viewBox="0 0 24 24">
                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                 </svg>
               </a>
@@ -165,30 +136,14 @@
 
           <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbxB_T5kQjX65g8g4LyXbIW4XgyK6fG52LCcVKO1HIXXg7P4h7WquMkVnBEJ7aDQnSiB/exec'
-     
-const form = document.forms['submit-to-google-sheet'];
-const spinner = document.querySelector('.loading-spinner');
-
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  form.classList.add('loading');
-  spinner.style.display = 'block';
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-      if (response.ok) {
-        window.location.href = "submit.html";
-      }
-    })
-    .catch(error => {
-      alert("Submission failed. Please try again later.");
-      console.error('Error:', error);
-    })
-    .finally(() => {
-      form.classList.remove('loading');
-      spinner.style.display = 'none';
-    });
-})
-
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
       </script>
                                         
 </body>
