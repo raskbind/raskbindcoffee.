@@ -1,305 +1,379 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="x-icon" href="images/icon.png">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Raskbind coffee: Official Website</title>
+    <link rel="shortcut icon" type="x-icon" href="image/image2.png">
+    <title>Raskbind Coffee</title>
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- Font Awesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS File Link  -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-  
-  <style>
-   #popup-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-  }
 
-  #popup-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-  }
+    <!-- HEADER -->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
 
-  #close-button {
-    background-color: #ccc;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+        <a href="#" class="logo">Raskbind coffee <i class="fas fa-mug-hot"></i></a>
 
-  #popup-content button {
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #4c4545;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#book">book</a>
+        </nav>
 
-  #popup-content button:hover {
-    background-color: #45a049;
-  }
+        <a href="#book" class="btn">book a coffee</a>
+    </header>
 
-  #popup-content a.button {
-    text-decoration: none;
-    color: white;
-  }
-  
-  </style>
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="row">
+            <div class="content">
+                <h3>fresh coffee in the morning</h3>
+                <a href="#menu" class="btn">buy one now</a>
+            </div>
 
-    <header class="text-gray-900 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <img src="images/logo.png" width="200px" fill="none" stroke="currentColor"  stroke-width="2" viewBox="0 0 24 24">
-
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-          </a>
-          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-600" href="home.html">Home</a>
-            <a class="mr-5 hover:text-gray-600" href="coffee.html">Coffee</a>
-            <a class="mr-5 hover:text-gray-600" href="food.html">Food</a>
-            <a class="mr-5 hover:text-gray-600" href="about.html">About</a>
-            <a class="mr-5 hover:text-gray-600" href="contact.html">Contact</a>
-          </nav>
+            <div class="image">
+                <img src="image/home-img-3.png" class="main-home-image" alt="">
+            </div>
         </div>
-      </header>
 
-      <div id="popup-container">
-        <div id="popup-content">
-          <!-- Popup content goes here -->
-          <img src="https://t3.ftcdn.net/jpg/03/99/18/40/360_F_399184092_zmu8UIkf6vbEv4T15IMmN2xkYfisYIJN.jpg" alt="Popup Image">
-          <h2>Special Offer!</h2>
-          <p>Free Delivery Shop now</p>
-          <button>
-          <a href="food.html" class="button">Check</a>
-          </button>
-          <button id="close-button">Close</button>
+        <div class="image-slider">
+            <img src="image/home-img-1.png" alt="">
+            <img src="image/home-img-2.png" alt="">
+            <img src="image/home-img-3.png" alt="">
         </div>
-      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h1 class="heading">about us <span>why choose us</span></h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="image/about-img.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3 class="title">what's make our coffee special!</h3>
+                <p>Raskbind Coffee offers a unique and exceptional coffee experience with premium quality beans sourced ethically from around the world. Our expert craftsmanship and commitment to sustainability ensure a consistently exceptional cup of coffee, while our community engagement creates a space for coffee lovers to connect and learn.</p>
+                <a href="https://www.linkedin.com/in/rahul-sharma-19336b24a/" class="btn">read more</a>
+                <div class="icons-container">
+                    <div class="icons">
+                        <img src="image/about-icon-1.png" alt="">
+                        <h3>quality coffee</h3>
+                    </div>
+                    <div class="icons">
+                        <img src="image/about-icon-2.png" alt="">
+                        <h3>our branches</h3>
+                    </div>
+                    <div class="icons">
+                        <img src="image/about-icon-3.png" alt="">
+                        <h3>free delivery</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+        <h1 class="heading">our menu <span>popular menu</span></h1>
+
+        <div class="box-container">
+            <a href="cappuccino.html" class="box">
+                <img src="image/menu-1.png" alt="">
+                <div class="content">
+                    <h3>Cappuccino</h3>
+                    <p>"Cappuccino, a delightful espresso-based beverage topped with foamy milk and a sprinkle of cocoa."</p>
+                    <span>₹129.00</span>
+                </div>
+            </a>
+
+            <a href="raskbindcoffee.html" class="box">
+                <img src="image/menu-2.png" alt="">
+                <div class="content">
+                    <h3>Raskbind Coffee</h3>
+                    <p>Raskbind Coffee: Indulge in the rich aroma and bold flavors of our meticulously crafted brews.</p>
+                    <span>₹79.00</span>
+                </div>
+            </a>
+
+            <a href="americano.html" class="box">
+                <img src="image/menu-3.png" alt="">
+                <div class="content">
+                    <h3>Americano</h3>
+                    <p>The Americano is a classic espresso-based beverage made by diluting espresso shots with hot water for a smooth and balanced taste.</p>
+                    <span>₹99.00</span>
+                </div>
+            </a>
+
+            <a href="macchiato.html" class="box">
+                <img src="image/menu-4.png" alt="">
+                <div class="content">
+                    <h3>Macchiato</h3>
+                    <p>A macchiato is a rich espresso-based drink topped with a dollop of foamed milk, creating a delightful balance of boldness and creaminess.</p>
+                    <span>₹119.00</span>
+                </div>
+            </a>
+
+            <a href="coldbrew.html" class="box">
+                <img src="image/menu-5.png" alt="">
+                <div class="content">
+                    <h3>Cold brew</h3>
+                    <p>Cold brew: Smooth and refreshing, the perfect way to savor the rich essence of coffee.</p>
+                    <span>₹119.00</span>
+                </div>
+            </a>
+
+            <a href="frappe.html" class="box">
+                <img src="image/menu-6.png" alt="">
+                <div class="content">
+                    <h3>Frappe</h3>
+                    <p>Frappe is a delicious and refreshing blended coffee beverage, perfect for a hot summer day.</p>
+                    <span>₹139.00</span>
+                </div>
+            </a>
+        </div>
+        <div class="button-container">
+            <a href="menu.html" class="btn">More</a>
+          </div>          
+    </section>
+
+    <!-- REVIEW -->
+    <section class="review" id="review">
+        <h1 class="heading">reviews <span>what people says</span></h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-1.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Raskbind Coffee has spoiled me for any other coffee. The rich flavors and distinct aromas of their beans are unmatched. It's a delight to start my day with a cup of their ethically sourced and expertly crafted coffee.</p>
+                    <h3>John D.</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-2.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>I am impressed by the variety and innovation at Raskbind Coffee. They offer such a diverse range of flavors and blends that there's always something new to try. Their commitment to sustainability is also commendable. Highly recommend!</p>
+                    <h3>Sarah M.</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-3.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>askbind Coffee is more than just a coffee brand; it's a community. I've attended their coffee workshops and events, and it's incredible how they bring coffee enthusiasts together. The passion they have for coffee is contagious, and it's a great space to connect and learn from fellow coffee lovers.</p>
+                    <h3>David P.</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="image/pic-4.png" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>The customer service at Raskbind Coffee is exceptional. The staff is friendly, knowledgeable, and always willing to help. They guided me through the different coffee options and even provided brewing tips to enhance my experience. It's a pleasure being their customer.</p>
+                    <h3>Emma S.</h3>
+                    <span>satisfied client</span>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- BOOK -->
+    <section class="book" id="book">
+        <h1 class="heading">booking <span>reserve a table</span></h1>
+
+        <form name="submit-to-google-sheet" action="">
+            <input name="Name" type="text" placeholder="Name" class="box">
+            <input name="Email" type="email" placeholder="Email" class="box">
+            <input name="Phone number" type="number" placeholder="Number" class="box">
+            <input name="Occupation" type="text" placeholder="Occupation" class="box">
+            <textarea name="Message" placeholder="Message" class="box" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+    </section>
+
+    <div class="loading-spinner"></div>
       
-                                                                                                                                              
-      <body>
-        <div class="contain">
-          <a href="coffee.html">
-            <div class="dot box">
-              <img src="images/coffee.png" alt="Description of the image" class="circle">
-            </div>
-          </a>
-          
-          <a href="pizza.html">
-            <div class="dot box">
-              <img src="images/pizza.png" alt="Description of the image" class="circle">
-            </div>
-          </a>
-          
-          <a href="subway.html">
-            <div class="dot box">
-              <img src="images/subway.png" alt="Description of the image" class="circle">
-            </div>
-          </a>
-
-          <a href="burger.html">
-            <div class="dot box">
-              <img src="images/burger.png" alt="Description of the image" class="circle">
-            </div>
-          </a>
-
-          <a href="momos.html">
-            <div class="dot box">
-              <img src="images/momos.png" alt="Description of the image" class="circle">
-            </div>
-          </a>
-        </div>
-    </body>
-
-    <br>
-      
-          <img src="images/image1.png">
-          <br>
-
-          <section class="text-gray-600 body-font">
-            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-              <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Trending Offer's
-                </h1>
-                <div class="flex justify-center">
-                </div>
-              </div>
-              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                <a href="food.html">
-                <img class="object-cover object-center rounded" alt="hero" src="https://media.istockphoto.com/id/1412439946/vector/free-delivery-special-offer-advertising-banner-template.jpg?s=612x612&w=0&k=20&c=IkA4hzMyVUoUrw2evEDAj1X-e8k08j8Mg2A7ftfqAOw=">
-                </a>
-              </div>
-              </div>
-            </div>
-          </section>
-          
-
-          <section class="text-gray-600 body-font">
-            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-              <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Raskbind 
-                  <br class="hidden lg:inline-block">instagram Official
-                </h1>
-                <p class="mb-8 leading-relaxed">Raskbind Provides World Best Quality Coffee, <br> Every morning I long to hold you…I need you, I want you, I have to have you…your warmth, your smell, your taste…ohhh coffee, I love you.</p>
-                <div class="flex justify-center">
-                  <button class="inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded text-lg"><a href="https://www.instagram.com/raskbind/">instagram</a></button>
-                </div>
-              </div>
-              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <img class="object-cover object-center rounded" alt="hero" src="https://s3.amazonaws.com/secretsaucefiles/photos/images/000/243/194/large/cozy.cosie.jpg?1632958921">
-              </div>
-            </div>
-          </section>
-
-
-          
-
-          <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto">
-              <div class="flex flex-col text-center w-full mb-20">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Explore Coffee</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">This morning’s Coffee makes yesterday distant. </p>
-              </div>
-              <div class="flex flex-wrap -m-4">
-                <div class="lg:w-1/3 sm:w-1/2 p-4">
-                  <div class="flex relative">
-                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://vaya.in/recipes/wp-content/uploads/2018/05/Coffee.jpg">
-                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                      <h2 class="tracking-widest text-sm title-font font-medium text-red-500 mb-1">COFFEE</h2>
-                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">All over india</h1>
-                      <p class="leading-relaxed">“When my blood runs black as the moonless night, and my heartbeat sounds as the Warriors march, only then may you say,”</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="lg:w-1/3 sm:w-1/2 p-4">
-                  <div class="flex relative">
-                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://c.files.bbci.co.uk/10A47/production/_123476186_gettyimages-1325401737.jpg">
-                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                      <h2 class="tracking-widest text-sm title-font font-medium text-red-500 mb-1">COFFEE</h2>
-                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Kashmir</h1>
-                      <p class="leading-relaxed">“It’s strange how drinking  cups of water seems impossible but 8 cups of coffee go down like a chubby kid on a see-saw.”</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="lg:w-1/3 sm:w-1/2 p-4">
-                  <div class="flex relative">
-                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://hips.hearstapps.com/hmg-prod/images/cup-of-coffee-royalty-free-image-1581611460.jpg?crop=1.00xw:0.751xh;0,0.153xh&resize=1200:*">
-                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                      <h2 class="tracking-widest text-sm title-font font-medium text-red-500 mb-1">COFFEE</h2>
-                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Hyderabad</h1>
-                      <p class="leading-relaxed">“Life without coffee is like something without something…sorry, I haven’t had any coffee yet.”</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="lg:w-1/3 sm:w-1/2 p-4">
-                  <div class="flex relative">
-                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://www.worldatlas.com/r/w768/upload/12/f8/83/coffee-cup.jpg">
-                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                      <h2 class="tracking-widest text-sm title-font font-medium text-red-500 mb-1">COFFEE</h2>
-                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Darjeeling</h1>
-                      <p class="leading-relaxed">“Do you know how helpless you feel if you have a full cup of coffee in your hand and you start to sneeze?”</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="lg:w-1/3 sm:w-1/2 p-4">
-                  <div class="flex relative">
-                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://cdn.luxe.digital/media/2020/05/07203610/best-coffee-beans-luxe-digital.jpg">
-                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                      <h2 class="tracking-widest text-sm title-font font-medium text-red-500 mb-1">COFFEE</h2>
-                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Kashmir</h1>
-                      <p class="leading-relaxed">“Kids are meeting in coffee shops and basements figuring out what’s unsustainable in their communities. That’s the future.”</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="lg:w-1/3 sm:w-1/2 p-4">
-                  <div class="flex relative">
-                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="http://cdn.shopify.com/s/files/1/0312/2897/articles/coffee_beans.png?v=1648141678">
-                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                      <h2 class="tracking-widest text-sm title-font font-medium text-red-500 mb-1">COFFEE</h2>
-                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">All over india</h1>
-                      <p class="leading-relaxed">“The powers of a man’s mind are directly proportional to the quantity of coffee he drank.”</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <footer class="text-gray-600 body-font">
-            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-              <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                <img src="images/logo.png" width="200px" fill="none" stroke="currentColor"  stroke-width="2" viewBox="0 0 24 24">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                </svg>
-              </a>
-              <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2023 Rahul —
-                <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@rahul</a>
-              </p>
-              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                <a class="text-gray-400">
-                  <a href="https://www.facebook.com/profile.php?id=100065601871236"><svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                  </svg>
-                </a>
-                <a class="ml-3 text-gray-400">
-                  <a href="https://twitter.com/chai_boom"><svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                  </svg>
-                </a>
-                <a class="ml-3 text-gray-400">
-                  <a href="https://www.instagram.com/raskbind/"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                  </svg>
-                </a>
-                <a class="ml-3 text-gray-400">
-                  <a href="https://www.linkedin.com/in/rahul-kumar-19336b24a/"><svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                    <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                  </svg>
-                </a>
-              </span>
-            </div>
-          </footer>
-
-          <script>
-            // Get the popup container and close button elements
-var popupContainer = document.getElementById("popup-container");
-var closeButton = document.getElementById("close-button");
-
-// Function to show the popup
-function showPopup() {
-  popupContainer.style.display = "flex";
+      <style>
+        .loading-spinner {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  border-top-color: #0073b1;
+  animation: spin 1s ease-in-out infinite;
 }
 
-// Function to hide the popup
-function hidePopup() {
-  popupContainer.style.display = "none";
+.loading-spinner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  border-top-color: #0073b1;
+  animation: spin 1s ease-in-out infinite;
 }
 
-// Add click event listener to the close button
-closeButton.addEventListener("click", hidePopup);
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
-// Show the popup when the page loads (you can trigger this as needed)
-window.addEventListener("load", showPopup);
+.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
 
-          </script>
+      </style>
 
+    <!-- FOOTER -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> india</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> USA</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> france</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> africa</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> japan</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i> home</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i> about</a>
+                <a href="#menu"><i class="fas fa-arrow-right"></i> menu</a>
+                <a href="#review"><i class="fas fa-arrow-right"></i> review</a>
+                <a href="#book"><i class="fas fa-arrow-right"></i> book</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="https://wa.me/+917549113544"><i class="fas fa-phone"></i> +91 75491-13544</a>
+                <a href="https://wa.me/+918102040423"><i class="fas fa-phone"></i> +91 81020-40423</a>
+                <a href="mailto:raskbind@gmail.com"><i class="fas fa-envelope"></i> raskbind@gmail.com</a>
+                <a href="#"><i class="fas fa-map"></i> Bettiah, Bihar</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="https://www.facebook.com/profile.php?id=100065601871236"><i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="https://twitter.com/raskbind"><i class="fab fa-twitter"></i> twitter</a>
+                <a href="https://www.instagram.com/raskbind/"><i class="fab fa-instagram"></i> instagram</a>
+                <a href="https://www.linkedin.com/in/rahul-sharma-19336b24a/"><i class="fab fa-linkedin"></i> linkedin</a>
+                <a href="https://www.youtube.com/@Raskbind"><i class="fab fa-youtube"></i> Youtube</a>
+            </div>
+        </div>
+
+        <div class="credit">created by <span>mr. Rahul Sharma</span> | all rights reserved</div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS File Link  -->
+    <script src="js/script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxB_T5kQjX65g8g4LyXbIW4XgyK6fG52LCcVKO1HIXXg7P4h7WquMkVnBEJ7aDQnSiB/exec'
+     
+const form = document.forms['submit-to-google-sheet'];
+const spinner = document.querySelector('.loading-spinner');
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  form.classList.add('loading');
+  spinner.style.display = 'block';
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      if (response.ok) {
+        window.location.href = "submit.html";
+      }
+    })
+    .catch(error => {
+      alert("Submission failed. Please try again later.");
+      console.error('Error:', error);
+    })
+    .finally(() => {
+      form.classList.remove('loading');
+      spinner.style.display = 'none';
+    });
+})
+
+      </script>
 
 </body>
+
 </html>
