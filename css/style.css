@@ -632,7 +632,3 @@ section {
         max-height: 60px; /* Increase the maximum height for larger screens */
     }
 }
-
-.date{
-    display: none;
-}
