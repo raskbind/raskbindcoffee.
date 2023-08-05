@@ -33,9 +33,32 @@
             <input name="Quantity" type="number" placeholder="Quantity" class="box">
             <input name="Product name" type="text" placeholder="Product name" value="Flat White" class="box">
             <textarea name="Message" placeholder="Message" class="box" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="Book Order" class="btn">
-        </form>
-    </section>
+            <div class="date">
+        <input type="text" name="DateTime" placeholder="Date and Time" class="box" id="datetime" style="display: none;" readonly>
+        </div>
+        <input type="submit" value="Book Order" class="btn">
+    </form>
+</section>
+
+<script>
+    // Function to get current date and time
+    function getCurrentDateTime() {
+        var now = new Date();
+        var date = now.toDateString();
+        var time = now.toLocaleTimeString();
+
+        return date + ' ' + time;
+    }
+
+    // Populate the "DateTime" field with the current date and time and show it
+    document.addEventListener('DOMContentLoaded', function() {
+        var datetimeField = document.getElementById('datetime');
+        if (datetimeField) {
+            datetimeField.value = getCurrentDateTime();
+            datetimeField.style.display = 'block';
+        }
+    });
+</script>
 
     <section class="footer">
       <div class="box-container">
